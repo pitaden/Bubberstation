@@ -1,8 +1,18 @@
+#define STANDARD_BLUE "standard_blue"
+#define ALERT_AMBER "alert_amber"
+#define CONTRACTOR_RED "contractor_red"
+#define EXTRASHIELD_GREEN "extrashield_green"
+#define EVIL_GREEN "evil_green"
+#define ROYAL_PURPLE "royal_purple"
+#define HAZARD_ORANGE "hazard_orange"
+#define COSMIC_BLUE "cosmic_blue"
+
 /datum/mod_theme/asset_protection
 	name = "Asset Protection"
 	desc = "A weaker version of the Apocryphal Modsuit, chiefly worn by Nanotrasen Asset Protection."
 	extended_desc = "A weaker version of the Apocryphal Modsuit meant for the Nanotrasen Asset Protection Division. This suit boasts higher speed and advanced actuators that make moving feel almost weightless, with advanced features for the savvy bodyguard."
 	default_skin = "asset_protection"
+	hardlight_theme = EXTRASHIELD_GREEN
 	armor_type = /datum/armor/mod_theme_ap
 	resistance_flags = FIRE_PROOF|ACID_PROOF
 	atom_flags = PREVENT_CONTENTS_EXPLOSION_1
@@ -57,3 +67,12 @@
 	fire = 100
 	acid = 100
 	wound = 15
+
+#undef STANDARD_BLUE
+#undef ALERT_AMBER
+#undef CONTRACTOR_RED
+#undef EXTRASHIELD_GREEN
+#undef EVIL_GREEN
+#undef ROYAL_PURPLE
+#undef HAZARD_ORANGE
+#undef COSMIC_BLUE
